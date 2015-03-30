@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'app',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://vivid-torch-3237.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

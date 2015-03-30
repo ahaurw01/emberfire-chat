@@ -1,0 +1,9 @@
+<ul>
+  {{#each chat in model}}
+    {{!-- <li>{{chat.name}} says: {{chat.says}}</li> --}}
+    <li>{{chat.state.when}} - {{chat.state.name}} says: {{chat.state.says}}</li>
+  {{/each}}
+</ul>
+
+Name: {{input value=newName action="say"}}
+Says: {{input value=newSays action="say"}}
